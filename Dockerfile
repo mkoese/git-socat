@@ -1,4 +1,4 @@
-FROM mikailkose/git 
+FROM quay.io/mikailkose/git:latest 
 
 RUN apk fix
 RUN apk --update add socat && \
