@@ -1,4 +1,4 @@
-FROM docker.io/alpine/git
+FROM mikailkose/git 
 
 RUN apk fix
 RUN apk --update add socat && \
