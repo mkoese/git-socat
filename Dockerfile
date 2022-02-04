@@ -1,7 +1,7 @@
 FROM quay.io/mikailkose/git:latest 
 
 RUN apk fix
-RUN apk --update add socat nmap-ncat & \
+RUN apk --update add netcat-openbsd & \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
