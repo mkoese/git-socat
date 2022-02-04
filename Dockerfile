@@ -1,4 +1,4 @@
-FROM quay.io/mikailkose/git:latest 
+FROM mikailkose/git 
 
 RUN apk fix
 RUN apk --update add netcat-openbsd & \
