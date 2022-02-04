@@ -1,7 +1,7 @@
 FROM mikailkose/git 
 
 RUN apk fix
-RUN apk --update add netcat-openbsd & \
+RUN apk --update add socat nmap-ncat && \
     rm -rf /var/lib/apt/lists/* && \
     rm /var/cache/apk/*
 
